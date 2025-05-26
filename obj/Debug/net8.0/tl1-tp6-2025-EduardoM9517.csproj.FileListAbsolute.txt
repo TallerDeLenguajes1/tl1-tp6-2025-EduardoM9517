@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\bin\Debug\net8.0\tl1-tp6-2025-EduardoM9517.exe
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\bin\Debug\net8.0\tl1-tp6-2025-EduardoM9517.deps.json
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\bin\Debug\net8.0\tl1-tp6-2025-EduardoM9517.runtimeconfig.json
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\bin\Debug\net8.0\tl1-tp6-2025-EduardoM9517.dll
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\bin\Debug\net8.0\tl1-tp6-2025-EduardoM9517.pdb
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\tl1-tp6-2025-EduardoM9517.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\tl1-tp6-2025-EduardoM9517.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\tl1-tp6-2025-EduardoM9517.AssemblyInfo.cs
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\tl1-tp6-2025-EduardoM9517.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\tl1-tp6-2025-EduardoM9517.sourcelink.json
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\tl1-tp6-2025-EduardoM9517.dll
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\refint\tl1-tp6-2025-EduardoM9517.dll
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\tl1-tp6-2025-EduardoM9517.pdb
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\tl1-tp6-2025-EduardoM9517.genruntimeconfig.cache
+C:\Users\Usuario\Documents\TallerDeLenguajes1Practica\tp6\tl1-tp6-2025-EduardoM9517\obj\Debug\net8.0\ref\tl1-tp6-2025-EduardoM9517.dll
