@@ -12,7 +12,7 @@ Console.WriteLine("Valor de b:"+b);*/
 
 /*EJERCICIO 1:*/
 
-Console.WriteLine("Escriba un numero:");
+/*Console.WriteLine("Escriba un numero:");
 string numero = Console.ReadLine();
 int num = 0;
 bool esNumero = int.TryParse(numero, out num);
@@ -114,7 +114,7 @@ else
 
 
 //EJERCICIO 3:
-while (true)
+/*while (true)
 {
     Console.WriteLine("----------CALCULADORA AVANZADA----------");
     Console.WriteLine("1. Calcular valor absoluto");
@@ -224,4 +224,261 @@ while (true)
         }
     }
 
+}*/
+
+
+//EJERCICIO 4:
+Console.WriteLine("----------CADENA DE CARACTERES SU LONGITUD----------");
+Console.WriteLine("Ingrese cadena de texto:");
+string cadena = Console.ReadLine();
+int longitud = cadena.Length;
+Console.WriteLine("La longitud de la cadena es: " + longitud);
+
+Console.WriteLine("----------CADENA DE CARACTERES CONCATENADA----------");
+Console.WriteLine("Ingrese un segunda cadena de texto:");
+string cadena2 = Console.ReadLine();
+string mensajeCompleto = string.Concat(cadena, cadena2, ".");
+Console.WriteLine("Texto concatenado: " + mensajeCompleto);
+
+Console.WriteLine("----------CADENA DE CARACTERES EXTRAER UNA SUBCADENA----------");
+Console.WriteLine("Ingrese la posicion inicial de la subcadena:");
+int posicionInicial = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese la longitud de la subcadena:");
+int longitudSubcadena = int.Parse(Console.ReadLine());
+if (posicionInicial >= 0 && posicionInicial < cadena.Length && longitudSubcadena > 0 && posicionInicial + longitudSubcadena <= cadena.Length)
+{
+    string subcadena = cadena.Substring(posicionInicial, longitudSubcadena);
+    Console.WriteLine("Subcadena extraida: " + subcadena);
+}
+else
+{
+    Console.WriteLine("Posicion inicial o longitud de subcadena no valido");
+}
+
+while (true)
+{
+    Console.WriteLine("----------CALCULADORA BASICA CON RESULTADO EN TEXTO----------");
+    Console.WriteLine("1. Calcular suma");
+    Console.WriteLine("2. Calcular resta");
+    Console.WriteLine("3. Calcular multiplicacion");
+    Console.WriteLine("4. Calcular division");
+    Console.WriteLine("Seleccione una opcion:");
+    int opcion = int.Parse(Console.ReadLine());
+    switch (opcion)
+    {
+        case 1:
+            Console.WriteLine("SUMAR");
+            Console.WriteLine("Ingrese el primer numero:");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero:");
+            int num2 = int.Parse(Console.ReadLine());
+            int suma = num1 + num2;
+            Console.WriteLine("La suma es: " + suma);
+            string sumaCadena = suma.ToString();
+            Console.WriteLine("La suma como cadena es: " + sumaCadena);
+            break;
+        case 2:
+            Console.WriteLine("RESTAR");
+            Console.WriteLine("Ingrese el primer numero:");
+            int num3 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero:");
+            int num4 = int.Parse(Console.ReadLine());
+            int resta = num3 - num4;
+            Console.WriteLine("La resta es: " + resta);
+            string restaCadena = resta.ToString();
+            Console.WriteLine("La resta como cadena es: " + restaCadena);
+            break;
+        case 3:
+            Console.WriteLine("MULTIPLICAR");
+            Console.WriteLine("Ingrese el primer numero:");
+            int num5 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero:");
+            int num6 = int.Parse(Console.ReadLine());
+            int multiplicacion = num5 * num6;
+            Console.WriteLine("La multiplicacion es: " + multiplicacion);
+            string multiplicacionCadena = multiplicacion.ToString();
+            Console.WriteLine("La multiplicacion como cadena es: " + multiplicacionCadena);
+            break;
+        case 4:
+            Console.WriteLine("DIVIDIR");
+            Console.WriteLine("Ingrese el primer numero:");
+            int num7 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el segundo numero:");
+            int num8 = int.Parse(Console.ReadLine());
+            if (num8 != 0)
+            {
+                double division = (double)num7 / num8;
+                Console.WriteLine("La division es: " + division);
+                string divisionCadena = division.ToString();
+                Console.WriteLine("La division como cadena es: " + divisionCadena);
+            }
+            else
+            {
+                Console.WriteLine("No se puede dividir entre cero");
+            }
+            break;
+        default:
+            Console.WriteLine("Opcion no valida, intente de nuevo");
+            break;
+    }
+
+    if (opcion != 5)
+    {
+        Console.WriteLine("Desea realizar otra operacion? (s/n):");
+        string respuesta = Console.ReadLine();
+        if (respuesta.ToLower() != "s")
+        {
+            Console.WriteLine("Saliendo...");
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Continuando...");
+        }
+    }
+}
+
+Console.WriteLine("----------CADENA DE CARACTERES MOSTRANDO CADA UNO DE SUS ELEMENTOS----------");
+Console.WriteLine("Recorriendo la cadena de texto:");
+foreach (char c in cadena)
+{
+    Console.WriteLine(c);
+}
+
+Console.WriteLine("----------CADENA DE CARACTERES MOSTRANDO PALABRA CLAVE----------");
+Console.WriteLine("Ingrese una palabra a buscar en la cadena:");
+string palabra = Console.ReadLine();
+if (cadena.Contains(palabra))
+{
+    Console.WriteLine("La palabra " + palabra + " se encuentra en la cadena.");
+}
+else
+{
+    Console.WriteLine("La palabra " + palabra + " no se encuentra en la cadena.");
+}
+
+Console.WriteLine("----------CADENA DE CARACTERES MOSTRANDOLA EN MAYUSCULA Y MINUSCULA----------");
+string cadenaMayusculas = cadena.ToUpper();
+string cadenaMinusculas = cadena.ToLower();
+Console.WriteLine("Cadena en mayusculas: " + cadenaMayusculas);
+Console.WriteLine("Cadena en minusculas: " + cadenaMinusculas);
+
+Console.WriteLine("----------CADENA DE CARACTERES SEPARADA POR UNA LETRA----------");
+Console.WriteLine("Ingrese una tercera cadena de texto:");
+string cadena3 = Console.ReadLine();
+Console.WriteLine("Ingrese el caracter separador:");
+char separador = Console.ReadKey().KeyChar;
+Console.WriteLine();
+string[] partes = cadena3.Split(separador);
+Console.WriteLine("Partes de la cadena separadas por '" + separador + "':");
+foreach (string parte in partes)
+{
+    Console.WriteLine(parte);
+}
+
+while (true)
+{
+    Console.WriteLine("----------CALCULADORA DE ECUACIONES BASICAS----------");
+    Console.WriteLine("1. Calcular suma");
+    Console.WriteLine("2. Calcular resta");
+    Console.WriteLine("3. Calcular multiplicacion");
+    Console.WriteLine("4. Calcular division");
+    Console.WriteLine("Seleccione una opcion:");
+    int opcion = int.Parse(Console.ReadLine());
+    switch (opcion)
+    {
+        case 1:
+            Console.WriteLine("SUMAR");
+            Console.WriteLine("Ingrese una ecuacion de la forma 'a + b':");
+            string ecuacionSuma = Console.ReadLine();
+            string[] parteSuma = ecuacionSuma.Split('+');
+            if (parteSuma.Length == 2)
+            {
+                int num1 = int.Parse(parteSuma[0].Trim());
+                int num2 = int.Parse(parteSuma[1].Trim());
+                int suma = num1 + num2;
+                Console.WriteLine("La suma es: " + suma);
+            }
+            else
+            {
+                Console.WriteLine("Ecuacion no valida, debe ser de la forma 'a + b'");
+            }
+            break;
+        case 2:
+            Console.WriteLine("RESTAR");
+            Console.WriteLine("Ingrese una ecuacion de la forma 'a - b':");
+            string ecuacionResta = Console.ReadLine();
+            string[] parteResta = ecuacionResta.Split('-');
+            if (parteResta.Length == 2)
+            {
+                int num1 = int.Parse(parteResta[0].Trim());
+                int num2 = int.Parse(parteResta[1].Trim());
+                int resta = num1 - num2;
+                Console.WriteLine("La resta es: " + resta);
+            }
+            else
+            {
+                Console.WriteLine("Ecuacion no valida, debe ser de la forma 'a - b'");
+            }
+            break;
+        case 3:
+            Console.WriteLine("MULTIPLICAR");
+            Console.WriteLine("Ingrese una ecuacion de la forma 'a * b':");
+            string ecuacionMultipli = Console.ReadLine();
+            string[] parteMultipli = ecuacionMultipli.Split('*');
+            if (parteMultipli.Length == 2)
+            {
+                int num1 = int.Parse(parteMultipli[0].Trim());
+                int num2 = int.Parse(parteMultipli[1].Trim());
+                int multipli = num1 * num2;
+                Console.WriteLine("La multiplicacion es: " + multipli);
+            }
+            else
+            {
+                Console.WriteLine("Ecuacion no valida, debe ser de la forma 'a * b'");
+            }
+            break;
+        case 4:
+            Console.WriteLine("DIVIDIR");
+            Console.WriteLine("Ingrese una ecuacion de la forma 'a / b':");
+            string ecuacionDividir = Console.ReadLine();
+            string[] parteDividir = ecuacionDividir.Split('/');
+            if (parteDividir.Length == 2)
+            {
+                int num1 = int.Parse(parteDividir[0].Trim());
+                int num2 = int.Parse(parteDividir[1].Trim());
+                if (num2 != 0)
+                {
+                    double division = (double)num1 / num2;
+                    Console.WriteLine("La division es: " + division);
+                }
+                else
+                {
+                    Console.WriteLine("No se puede dividir entre cero");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Ecuacion no valida, debe ser de la forma 'a / b'");
+            }
+            break;
+        default:
+            Console.WriteLine("Opcion no valida, intente de nuevo");
+            break;
+    }
+
+    if (opcion != 5)
+    {
+        Console.WriteLine("Desea realizar otra operacion? (s/n):");
+        string respuesta = Console.ReadLine();
+        if (respuesta.ToLower() != "s")
+        {
+            Console.WriteLine("Saliendo...");
+            break;
+        }
+        else
+        {
+            Console.WriteLine("Continuando...");
+        }
+    }
 }
